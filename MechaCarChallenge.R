@@ -6,11 +6,26 @@ summary(mecha_lm)
 abline(mecha_lm,col="blue")
 
 #Deliverable 2
-Mecha_table <- read.csv('Suspension_Coil.csv') #import dataset
-total_summary <- Mecha_table %>% 
+Mecha_coil <- read.csv('Suspension_Coil.csv') #import dataset
+total_summary <- Mecha_coil %>% 
 summarise(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
 
-lot_summary <- Mecha_table %>% group_by(Manufacturing_Lot) %>% 
+lot_summary <- Mecha_coil %>% group_by(Manufacturing_Lot) %>% 
 summarise(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
 
-  
+#Deliverable 3
+
+# Across all Lots
+t.test(Mecha_coil$PSI,mu = 1500)
+
+#Suspension Coil T-Tests
+
+# Lot 1
+t.test(subset(Mecha_coil,Manufacturing_Lot=="Lot1")$PSI,mu = 1500)
+
+# Lot 2
+t.test(subset(Mecha_coil,Manufacturing_Lot == "Lot2")$PSI,mu = 1500)
+
+# Lot 3
+t.test(subset(Mecha_coil,Manufacturing_Lot == "Lot3")$PSI, mu = 1500)
+
