@@ -26,11 +26,13 @@ According to the result, Lot 1 and Lot 2 are both within design specifications, 
 ![lot1&lot2 T](https://github.com/summerginger/MechaCar_Statistical_Analysis/blob/main/pictures/lot%201%262%20T.png)
 
 According to each of the one-sample t-tests, Lot 1 and Lot 2 PSI values are not statistically different from the population mean. 
-However, the p-value of Lot 3 is 0.041, which is below the significance level, which means there is evidence that the Lot 3 mean suspension coil PSI is statistically different from the population mean.
 ![lot3&all](https://github.com/summerginger/MechaCar_Statistical_Analysis/blob/main/pictures/lot3%20%26%20All%20T.png)
 
+However, the p-value of Lot 3 is 0.041, which is below the significance level, which means there is evidence that the Lot 3 mean suspension coil PSI is statistically different from the population mean.
+
 ## D4 Study Design: MechaCar vs Competition
-One metric that most consumers are interested in when it comes to vehicles is cost and fuel efficiency. According to the Union Concerned Scientists survey article shows there is strong support for electric cars and the most of reason for that is : 
+One metric that most consumers are interested in when it comes to vehicles is cost and fuel efficiency.
+According to the Union Concerned Scientists survey article shows there is strong support for electric cars and the most of reason for that is : 
 
 •	73 percent say increased electric car use will help reduce oil use.
 
@@ -38,6 +40,13 @@ One metric that most consumers are interested in when it comes to vehicles is co
 
 •	65 percent say electric cars will help consumers save money on fuel and maintenance. (2019, https://www.ucsusa.org/about/news/survey-shows-strong-support-electric-vehicles )
 
-Suppose MechaCar could produce fuel efficiency(electric or hybrid) performance cars highly at affordable prices for society and help reduce oil use, reduce pollution, and save on fuel and maintenances. In that case, the market demand will be skyrocket high. 
-As far as we know that fuel efficiency is a standard performance metric. Therefore it would be straightforward to collect fuel efficiency data for a large number of vehicles. We can create a study that tests whether or not the fuel efficiency of MechaCar is statistically different from a collection of other comparable cars such as Tesla. 
-The null hypothesis would be that there is no statistical difference between MechaCar fuel efficiency and the fuel efficiency of all other comparable vehicles. The alternative hypothesis would be a statistical difference between the fuel efficiency of MechaCar versus the other cars. The statistical test we can use is a one-sample t-test, where the population data will be all comparable vehicles. To test this, we will need fuel efficiency data points from cars and multiple data points from the MechaCar cars, so it will be vital to include the fuel efficiency of multiple vehicle configurations.
+Suppose MechaCar could produce fuel efficiency(electric or hybrid) performance cars highly at affordable prices for society and help reduce oil use, reduce pollution, and save on fuel and maintenances. In that case, the market demand will be skyrocket high.
+
+As far as we know that fuel efficiency is a standard performance metric. Therefore it would be straightforward to collect fuel efficiency data for a large number of vehicles. We can create a study that tests whether or not the fuel efficiency of MechaCar is statistically different from a collection of other comparable cars such as Tesla.
+
+The null hypothesis would be that there is no statistical difference between MechaCar fuel efficiency and the fuel efficiency of all other comparable vehicles. The alternative hypothesis would be a statistical difference between the fuel efficiency of MechaCar versus the other cars. 
+
+The statistical test we can use is a one-sample t-test, where the population data will be all comparable vehicles. To test this, we will need fuel efficiency data points from cars and multiple data points from the MechaCar cars, so it will be vital to include the fuel efficiency of multiple vehicle configurations.
+
+## Software
+Rstudio
