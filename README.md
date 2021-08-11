@@ -15,12 +15,12 @@ According to the summary output, the multiple regression model does an adequate 
 because the multiple r-squared value was 0.71 while the p-value remained significant. This means that roughly 71% of the time, the model will 
 predict mpg values correctly. Most likely, other, more influential variables and factors were not recorded in the data set, contributing to the change in mpg for the mechanical prototype.
 
-## D2 The design specifications for 
-the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-![lot1&2 PSI](https://github.com/summerginger/MechaCar_Statistical_Analysis/blob/main/pictures/lot%20summery.png)
+## D2 The design specifications
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+![PSI SUMMERY](https://github.com/summerginger/MechaCar_Statistical_Analysis/blob/main/pictures/SUMMARY.png)
 
 According to the result, Lot 1 and Lot 2 are both within design specifications, and both have the same calculated mean and median. However, Lot 3 is far more variable than the other manufacturing lots.  Lot 3 has a computed variance that exceeds the manufacturing specs to 170.3 PSI.  However, if all three lot combines, the overall calculated variance (62.3PSI) is within specifications.
-![TOTAL SUMMERY](https://github.com/summerginger/MechaCar_Statistical_Analysis/blob/main/pictures/total%20summery.png)
 
 ## D3 T-Tests on Suspension Coils
 ![lot1&lot2 T](https://github.com/summerginger/MechaCar_Statistical_Analysis/blob/main/pictures/lot%201%262%20T.png)
